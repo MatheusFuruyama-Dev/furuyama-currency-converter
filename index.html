@@ -18,17 +18,71 @@
 </head>
 <body>
     
-<main class = mainContainer>
+<section id = allContent>
 
-<header id="mainHeader"> 
+<!---------------------------------------->
 
-            <h1>Furuyama Currency Converter</h1>
+<header id="mainHeader">  <h1 id="title">Furuyama Currency Converter</h1> </header>
 
-</header>
+<!---------------------------------------->
+<main id="mainContent">
 
+<label class="valuesFromLabels"> Converter de:
+    <select class="valuesFromSelect"> 
+
+<option> Real Brasileiro $ </option>
+
+    </select> 
+</label>
+
+<!---------------------------------------->
+
+<label class="valuesFromLabels"> Converter para:
+    <select class="valuesFromSelect">  
+
+<option> Dólar Americano US$ </option> <option> Euro € </option> <option> Iene ¥ </option> <option> Bitcoin ₿ </option>
+
+    </select> 
+</label>
+
+<!---------------------------------------->
+
+<label class="valuesFromLabels"> Valor:
+ 
+<input class="valueFromInput" placeholder="R$1,00">
+
+</label>
+
+<button id="convertButton"> Converter </button>
+
+<!---------------------------------------->
+
+<section id = illustrantionsSection>
+
+<div id="brazilImgBox">
+
+    <img id= brazilImg src="./assets/brazilimg.png" alt="brazilImg.png">
+    <p> Real R$ </p>
+    <p> R$ 1,00 </p>
+
+</div>
+
+<img id="setaImg" src="./assets/setaimg.png" alt="setaImg.png">
+
+<div id="usaImgBox">
+
+    <img id = usaImg src="./assets/usaimg.png" alt="usaImg.png">
+    <p> Dólar US$ </p>
+    <p> US$ 1,00 </p>
+
+</div>
+
+</section>
 
 </main>
 
+<!---------------------------------------->
+</section>
 
 </body>
 </html>

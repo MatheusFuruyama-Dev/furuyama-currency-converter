@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --green-brazil: #009c3b;
+    --yellow-brazil: #ffdf00;
+    --blue-brazil: #002776;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f0f2f5;
+    color: #1a1a2e;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+#allContent{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 520px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow:0 4px 24px rgba(0, 39, 118, 0.10);
+    border: 1px solid var #dde1ea;
+}
+
+#mainHeader{
+    background: var(--blue-brazil);
+    padding: 22px 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+} 
+
+#title{
+    font-size: 20.8px;
+    font-weight: 700;
+    color: var(--yellow-brazil);
+    letter-spacing: 0.50px ;
+    text-transform: uppercase
+    ;
+}
+
+#mainContent{
+    padding: 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.valuesFromLabels{
+    display: flex;
+    flex-direction: column;
+    font-size: 12.8px;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+}
+
+.valuesFromSelect, .valueFromInput{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15.2px;
+    color:#1a1a2e;
+    background: #f0f2f5;
+    border: 1.5px solid #dde1ea;
+    border-radius: 6px;
+    padding: 10px 14px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+}
+
+.valuesFromSelect:focus, .valueFromInput:focus{
+    border-color: var(--blue-brazil);
+}
+
+#convertButton{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15.2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #Fff;
+    background: var(--green-brazil);
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#convertButton:hover {background: #007a2e;}
+
+#illustrantionsSection{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12.8px;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+#brazilImg, #usaImg{
+    width: 100px; height: 100px;
+}
+
+#setaImg{
+    width: 60px; height: 60px;
+}
+
