@@ -43,6 +43,10 @@ body{
     gap: 12px;
 } 
 
+span{
+    color: var(--green-brazil);
+}
+
 #title{
     font-size: 20.8px;
     font-weight: 700;
@@ -68,7 +72,7 @@ body{
     text-transform: uppercase;
 }
 
-.valuesFromSelect, .valueFromInput{
+.valuesFromSelect, #valueFromInput{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 15.2px;
     color:#1a1a2e;
@@ -115,7 +119,7 @@ body{
     cursor: default;
 }
 
-#brazilImg, #usaImg{
+#brazilImg, #currencyImg{
     width: 100px; height: 100px;
 }
 

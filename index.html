@@ -22,7 +22,7 @@
 
 <!---------------------------------------->
 
-<header id="mainHeader">  <h1 id="title">Furuyama Currency Converter</h1> </header>
+<header id="mainHeader">  <h1 id="title">Furuyama <span>Brazilian</span> Currency Converter</h1> </header>
 
 <!---------------------------------------->
 <main id="mainContent">
@@ -38,7 +38,7 @@
 <!---------------------------------------->
 
 <label class="valuesFromLabels"> Converter para:
-    <select class="valuesFromSelect">  
+    <select class="valuesFromSelect" id="currencyOptions">  
 
 <option> Dólar Americano US$ </option> <option> Euro € </option> <option> Iene ¥ </option> <option> Bitcoin ₿ </option>
 
@@ -49,7 +49,7 @@
 
 <label class="valuesFromLabels"> Valor:
  
-<input class="valueFromInput" placeholder="R$1,00">
+<input id="valueFromInput" placeholder="R$1,00">
 
 </label>
 
@@ -63,7 +63,7 @@
 
     <img id= brazilImg src="./assets/brazilimg.png" alt="brazilImg.png">
     <p> Real R$ </p>
-    <p> R$ 1,00 </p>
+    <p id="valueFromImgBrazil"> R$ 1,00 </p>
 
 </div>
 
@@ -71,9 +71,9 @@
 
 <div id="usaImgBox">
 
-    <img id = usaImg src="./assets/usaimg.png" alt="usaImg.png">
-    <p> Dólar US$ </p>
-    <p> US$ 1,00 </p>
+    <img id = currencyImg src="./assets/usaimg.png" alt="usaImg.png">
+    <p id ="currencyName"> Dólar US$ </p>
+    <p id="valueFromImg"> US$ 1,00 </p>
 
 </div>
 
@@ -85,4 +85,7 @@
 </section>
 
 </body>
+
+<script src="./script.js"></script>
+
 </html>
